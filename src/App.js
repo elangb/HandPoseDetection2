@@ -90,9 +90,7 @@ function App() {
     <div className="App">
       <h1>{gesture !== null ? `Gesture: ${gesture}` : "No Hand Detected"}</h1>
       <header className="App-header">
-        <h1>
-          Hello World
-        </h1>
+        <h1>Hello World</h1>
         <Webcam
           ref={webcamRef}
           style={{
@@ -103,8 +101,9 @@ function App() {
             right: 0,
             textAlign: "center",
             zIndex: 9,
-            width: 640,
-            height: 480,
+            width: "100%",
+            maxWidth: "640px", // Set a max width for larger screens
+            height: "auto",
           }}
         />
 
@@ -118,8 +117,9 @@ function App() {
             right: 0,
             textAlign: "center",
             zIndex: 9,
-            width: 640,
-            height: 480,
+            width: "100%",
+            maxWidth: "640px", // Set a max width for larger screens
+            height: "auto",
           }}
         />
       </header>
